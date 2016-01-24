@@ -1,0 +1,43 @@
+Auxilia Physical Computing
+
+* Build
+  * breaded shrimp 
+  * additional LED's / pull-up resistors
+  * sensoren
+
+* Code
+  1. blink
+    * setup() & loop()
+  2. fade
+    * PWM-output
+  3. rgb-serial
+    * Serial
+  4. ...
+    * ... (voltmeter input)
+  
+//--------//
+
+DIY Robot
+Physical Computing - DIY Robot
+We gaan een eigen robot bouwen die m.b.v. een "afstandsscanner" zijn route kan vinden. Dit doen wij met behulp van een stukje microprocessor-hardware, nl. een Arduino. Voordat we een gehele robot kunnen bouwen gaan we eerst de verschillende stukken van de robot werkend krijgen. Daarvoor doorlopen we onderstaand stappenplan:
+
+Stappen
+
+Blink; sluit een LED aan, laat deze periodiek knipperen.
+Fade; Laat m.b.v. PWM een LED langzaam aan en uit gaan.
+Distance; sluit een afstandssensor aan en laat deze de meetwaarde periodiek over de seriele poort schrijven.
+De robot zelf
+
+Drive
+H-bridge; Sluit de H-bridge (motorcontrolechip) aan zoals beschreven in "€ 50,- Robot". Zorg ervoor dat je dit zo modulair mogelijk doet (opdat je het niet later nog eens hoeft te doen).
+Engine/Power; Sluit de twee motoren, en de batterij aan. Let wel dat je ervoor zorgt dat je de spanning aan en uit kan schakelen (danwel met een schakelaar, danwel door 1 draadje los te halen).
+drive(int left, int right); Schrijf een subroutine die de motoren aanstuurt. Hint: Je kunt veel halen uit het voorbeeldprogramma uit "€ 50,- Robot".
+Eenheid; monteer nu alle losse onderdelen (m.b.v. bijvoorbeeld een schuimblok) aan elkaar.
+De robot moet nooit ergens tegenaan rijden.
+De robot moet willekeurig over een veld rijden ("gras maaien").
+Software; programmeer de robot nu zodanig dat deze aan de volgende eisen voldoet:
+Bronnnen
+
+"€ 50,- Robot" [deel 1; deel 2]
+
+
